@@ -1,0 +1,102 @@
+body{
+    font-family: 'Roboto';
+    background-color: #81B29A;
+    background: linear-gradient(0deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+    color: white;
+    height: auto;
+}
+
+
+header {
+    display: flex;
+    background-color: rgba(40, 41, 61, 0.576);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    display: inline-block;
+    color: #aff2d8;
+ 
+    letter-spacing: 0.04rem;
+    font-size: 1.2rem;
+    position: relative;
+    transition: .3s;
+    
+
+    &:hover {
+        color: #F2CC8F;
+
+        
+
+    }
+}
+
+.menu a::after {
+    content: '';
+    width: 100%;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #F2CC8F;
+    height: 2px;
+    transform: scaleX(100%)
+}
+
+
+
+
+
+
+
+
+.about-me-content, .projects-content {
+ padding: 80px 1rem 20px 1rem;
+
+}
+
+table {
+    padding: 1rem;
+  width: 95vw;
+}
+
+tr {
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  tr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+td {
+    padding: 1rem;
+}
