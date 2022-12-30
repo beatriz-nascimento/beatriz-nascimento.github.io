@@ -21,9 +21,9 @@ export class AppComponent {
 
 
   tiles: Tile[] = [
-    {title:'Title from experience', description: 'Experience description 1', cols: 2, rows: 1, color: 'lightblue'},
-    {title:'Title from experience', description: 'Experience description 1', cols: 2, rows: 2, color: 'lightgreen'},
-    {title:'Title from experience', description: 'Experience description 1', cols: 2, rows: 1, color: 'lightpink'},
-    {title:'Title from experience', description: 'Experience description 1', cols: 2, rows: 1, color: '#DDBDF1'},
+    {title:'Title from experience', description: 'Experience description 1', cols: 2, rows: 1, color: '#43768e'},
+    {title:'Title from experience', description: 'Experience description 1', cols: 2, rows: 2, color: 'hsl(199deg 26% 61%)'},
+    {title:'Title from experience', description: 'Experience description 1', cols: 2, rows: 1, color: 'hsl(199deg 26% 61%)'},
+    {title:'Title from experience', description: 'Experience description 1', cols: 2, rows: 1, color: '#43768e'},
   ];
 }
