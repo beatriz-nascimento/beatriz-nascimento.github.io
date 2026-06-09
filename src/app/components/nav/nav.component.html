@@ -1,0 +1,36 @@
+<header class="nav" [class.nav--scrolled]="isScrolled">
+  <div class="inner container">
+
+    <a href="#about" class="brand" (click)="closeMenu()">
+      <span>bn<span class="dot">.</span></span>
+    </a>
+
+    <nav [class.open]="menuOpen">
+      <a
+        *ngFor="let link of links"
+        [href]="link.href"
+        (click)="closeMenu()"
+      >{{ link.label }}</a>
+
+      <a
+        href="mailto:beatrizsn.nascimento@gmail.com"
+        class="btn btn--outline cta"
+        (click)="closeMenu()"
+      >
+        Hire me
+      </a>
+    </nav>
+
+    <button
+      [class.open]="menuOpen"
+      (click)="toggleMenu()"
+      aria-label="Toggle menu"
+      [attr.aria-expanded]="menuOpen"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>

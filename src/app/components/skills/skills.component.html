@@ -1,0 +1,24 @@
+<section id="skills" class="skills">
+  <div class="container">
+
+    <header class="reveal">
+      <p class="section-label">03. Toolkit</p>
+      <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
+      <p class="section-subtitle">
+        Three years deep in Angular — and actively broadening into the full stack.
+      </p>
+    </header>
+
+    <div class="groups">
+      <div *ngFor="let group of groups" class="skill-group reveal" [style.--group-color]="group.color">
+        <h3>{{ group.label }}</h3>
+        <ul>
+          <li *ngFor="let skill of group.skills">
+            {{ skill }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
